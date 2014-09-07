@@ -21,7 +21,10 @@ local MaximizeCombatLog = true		-- When the combat log is selected, it will be m
 local channelNumbers = {
 	[1] = true,
 	[2] = true,
-	[3]  = true,
+	[3] = true,
+	[4] = true,
+	[5] = true,
+	[6] = true,
 }
 
 local ChatFrameConfig = {	-- Events which maximize the chat for the different windows
