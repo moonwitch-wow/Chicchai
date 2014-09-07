@@ -25,19 +25,15 @@ local channelNumbers = {
 }
 
 local ChatFrameConfig = {	-- Events which maximize the chat for the different windows
-	["ChatFrame1"] = {
-		"say", "emote", "text_emote",
-		"party", "party_leader", "party_guide",
-		"whisper",
-		"guild", "officer",
-		"battleground", "battleground_leader",
-		"raid", "raid_leader", "raid_warning",
-	
-		"bn_whisper",
-		"bn_conversation",
-		"bn_broadcast",
-	},
-	["ChatFrame3"] = true, -- "true" just makes this frame available for minimizing and registers it with Chicchai
+	["ChatFrame1"] = {"CHANNEL", "SAY", "EMOTE", "TEXT_EMOTE",
+                  "YELL", "SYSTEM", "SYSTEM_NOMENU", "ERRORS"},
+  ["ChatFrame3"] = {"GUILD", "GUILD_OFFICER", "OFFICER", "GUILD_ACHIEVEMENT"},
+  ["ChatFrame4"] = {"PARTY", "PARTY_LEADER", "RAID", "RAID_LEADER", "RAID_WARNING",
+                  "BATTLEGROUND", "BATTLEGROUND_LEADER", "RAID_BOSS_WHISPER", "RAID_BOSS_EMOTE", "RAID_BOSS_WHISPER", "RAID_BOSS_EMOTE",
+                  "SYSTEM", "INSTANCE_CHAT", "INSTANCE_LEADER"},
+  ['ChatFrame5'] = {},
+  ["ChatFrame6"] = {"WHISPER", "WHISPER_INFROM", "REPLY", "BN_WHISPER", "BN_CONVERSATION",
+                  "BN_CONVERSATION_NOTICE", "BN_ALERT"}
 }
 
 --[[
