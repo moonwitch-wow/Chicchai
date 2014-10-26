@@ -5,7 +5,7 @@
 local maxHeight = 120				-- How high the chat frames are when maximized
 local animTime = 0.3				-- How lang the animation takes (in seconds)
 local minimizeTime = 10				-- Minimize after X seconds
-local minimizedLines = 5			-- Number of chat messages to show in minimized state
+local minimizedLines = 3			-- Number of chat messages to show in minimized state
 
 local MaximizeOnEnter = true		-- Maximize when entering chat frame, minimize when leaving
 local WaitAfterEnter = 0			-- Wait X seconds after entering before maximizing
@@ -207,7 +207,7 @@ for chatname, options in pairs(ChatFrameConfig) do
 		end
 	end
 	ChatFrameConfig[chatname] = chicchai
-	
+
 	chatframe.Maximize = Maximize
 	chatframe.Minimize = Minimize
 	chatframe.UpdateHeight = updateHeight
